@@ -44,3 +44,10 @@ node ./dist/type-violation.js
 // or
 node ./dist/contract-violation.js
 ```
+
+test
+----
+
+```js
+yarn run test
+```

@@ -6,6 +6,8 @@
   "license": "MIT",
   "scripts": {
     "build": "babel src -d dist",
+    "pretest": "npm run build",
+    "test": "mocha $(find test -name '*.js')",
     "type-check": "flow"
   },
   "devDependencies": {
@@ -15,6 +17,8 @@
     "flow-bin": "^0.37.0"
   },
   "dependencies": {
-    "babel-plugin-unassert": "^2.1.1"
+    "babel-plugin-unassert": "^2.1.1",
+    "babel-register": "6.18.0",
+    "mocha": "3.2.0"
   }
 }
