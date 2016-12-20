@@ -6,6 +6,7 @@ setup
 
 ```js
 yarn
+flow-typed install
 ```
 
 execute
