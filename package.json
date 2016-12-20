@@ -1,0 +1,20 @@
+{
+  "name": "dbc-type-sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "janus_wel <janus.wel.3@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src -d dist",
+    "type-check": "flow"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-plugin-transform-flow-strip-types": "^6.21.0",
+    "babel-preset-es2015": "^6.18.0",
+    "flow-bin": "^0.37.0"
+  },
+  "dependencies": {
+    "babel-plugin-unassert": "^2.1.1"
+  }
+}
