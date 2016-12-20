@@ -31,6 +31,11 @@ describe('awesome', () => {
         })
 
         // test for Design by Contract
+        it('throws an assertion exception with minus src', () => {
+            assert.throws(() => zeroPadding(-498))
+        })
+
+        // test for Design by Contract
         it('throws an assertion exception with minus digit', () => {
             assert.throws(() => zeroPadding(732, -4))
         })

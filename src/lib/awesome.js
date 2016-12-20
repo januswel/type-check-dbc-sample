@@ -11,6 +11,7 @@ export function sum(...n: Array<number>): number {
 }
 
 export function zeroPadding(n: number, digit: number = 8): string {
+    assert(0 <= n)
     assert(1 < digit)
     const zeros = Array(digit - 1).fill('0').join('')
     return `${zeros}${n.toString()}`.slice(-digit)
